@@ -591,7 +591,7 @@ NSDictionary *initOptions;
     // Calculate the size for the snippet strings
     if (snippet) {
       snippetFont = [UIFont systemFontOfSize:12.0f];
-      snippet = [snippet stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+      // snippet = [snippet stringByReplacingOccurrencesOfString:@"\n" withString:@""];
       snippetSize = [snippet sizeWithFont:snippetFont constrainedToSize: CGSizeMake(mapView.frame.size.width - 13, mapView.frame.size.height - 13)];
       rectSize.height += snippetSize.height + 4;
       if (rectSize.width < snippetSize.width + leftImg.size.width) {
